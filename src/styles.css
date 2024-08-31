@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.content {
+    width: 80%; /* Adjust as needed */
+    margin: 0 auto; /* Centers content */
+    padding: 20px;
+  }
+  
+  .example-class {
+    width: 80%; /* Example of using percentage for width */
+    margin: 0 auto; /* Centering the element horizontally */
+    font-size: 1.2rem; /* Base font size */
+  }
+  
+  /* Media query for tablets */
+  @media (max-width: 1024px) {
+    .content {
+      width: 90%; /* Adjust as needed */
+    }
+  
+    .example-class {
+      width: 90%; /* Adjust as needed */
+    }
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .content {
+      width: 100%; /* Full width on smaller screens */
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .example-class {
+      width: 100%; /* Full width on smaller screens */
+      margin: 10px 0; /* Adjusted margins for smaller screens */
+      font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+  }

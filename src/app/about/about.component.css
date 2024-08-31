@@ -1,0 +1,90 @@
+.about {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 95%;
+    margin: 30px auto; /* Centered with automatic side margins */
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .about:hover {
+    background-color: aquamarine;
+  }
+  
+  .myinfo {
+    margin-left: 30px;
+    margin-top: 20px;
+    flex: 1;
+  }
+  
+  button a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  button:hover {
+    background-color: blue;
+    color: white;
+  }
+  
+  button a:hover {
+    color: white;
+  }
+  
+  .mypic {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mypic img {
+    width: 85%;
+    height: auto;
+    margin: 20px;
+    border-radius: 20px;
+  }
+  
+  /* Media query for tablets */
+  @media (max-width: 1024px) {
+    .about {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .myinfo {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    .mypic img {
+      width: 100%;
+      height: auto;
+      margin: 20px auto;
+    }
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .myinfo h2 {
+      font-size: 1.5rem;
+    }
+  
+    .myinfo h4 {
+      font-size: 1rem;
+    }
+  
+    button {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .mypic img {
+      width: 100%;
+      height: auto;
+      margin: 10px auto;
+    }
+  }

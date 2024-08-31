@@ -1,0 +1,60 @@
+.contact {
+    background-color: rgb(97, 240, 197);
+    color: black;
+    width: 97%;
+    margin: 25px auto; /* Center the container */
+    border-radius: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns: 1 for contact info, 1 for form */
+    text-align: center;
+    gap: 20px;
+}
+.contact:hover{
+    background-color: rgb(70, 212, 165);
+}
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact a:hover {
+    color: brown;
+    text-decoration: underline;
+}
+
+.resume {
+    margin-top: 20px;
+    background-color: rgb(224, 189, 73);
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.resume:hover {
+    background-color: turquoise;
+}
+
+/* Media query for tablets */
+@media (max-width: 1024px) {
+    .contact {
+        grid-template-columns: 1fr; /* Stack sections vertically */
+        padding: 10px;
+    }
+
+    .resume {
+        width: 100%; /* Full width for better stacking */
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .contact {
+        grid-template-columns: 1fr; /* Stack sections vertically */
+        padding: 5px;
+    }
+
+    .resume {
+        width: 100%; /* Full width for better stacking */
+    }
+}

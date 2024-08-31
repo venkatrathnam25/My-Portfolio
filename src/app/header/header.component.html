@@ -1,0 +1,15 @@
+<mat-toolbar class="header" fxLayout="row" fxLayoutAlign="start center">
+    <img class="profile" src="../../assets/images/pic.jpg">&nbsp;
+    <span>venkatrathnam</span>
+    <span fxFlex class="example-spacer"></span>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" fxShow fxHide.gt-xs (click)="toggleNav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar> 
+  <div class="mobile-nav" *ngIf="showNav" fxHide fxShow.lt-sm>
+    <a mat-button routerLink="/home" routerLinkActive="active" (click)="toggleNav()">Home</a>
+    <a mat-button routerLink="/about" routerLinkActive="active" (click)="toggleNav()">About</a>
+    <a mat-button routerLink="/skills" routerLinkActive="active" (click)="toggleNav()">Skills</a>
+    <a mat-button routerLink="/contact" routerLinkActive="active" (click)="toggleNav()">Contact</a>
+  </div>
+  
